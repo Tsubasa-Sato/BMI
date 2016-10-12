@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+#btn {
+    display: inline-block;
+    background-color: mediumseagreen;
+    box-shadow: 0 4px 0 green;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#btn:hover  {
+    opacity: 0.8;
+}
+#weight {
+    text-align: right;
+}
+#told {
+    text-align: right;
+}
+#result {
+    padding: 30px;
+}
