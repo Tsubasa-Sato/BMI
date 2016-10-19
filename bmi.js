@@ -14,8 +14,8 @@
     };
 
     btn.onclick = function() {
-        var weight = weightForm.value;
-        var told = toldForm.value;
+        var weight = parseFloat(weightForm.value);
+        var told = parseFloat(toldForm.value);
 
         if (weight.length === 0) {
             return;
@@ -28,7 +28,7 @@
         answer = (answer * 10000);
         answer = Math.floor(answer * 100)/100;
 
-        if (weight.match(/^[1-9][0-9]*$/) && told.match(/^[1-9][0-9]*$/)){
+        if (weight > 0 && told > 0){
 
         if(answer < 18.5) {
             resultArea.innerHTML = (answer + ': 低体重です。');
