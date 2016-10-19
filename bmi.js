@@ -8,10 +8,10 @@
 
     weightForm.onclick = function(){
         this.select();
-    }
+    };
     toldForm.onclick = function() {
         this.select();
-    }
+    };
 
     btn.onclick = function() {
         var weight = weightForm.value;
@@ -46,7 +46,6 @@
         } else {
             result.innerHTML = ('入力内容に誤りがあります。もう一度入力してください。');
         }
-    }
-
+    };
 
 })();
